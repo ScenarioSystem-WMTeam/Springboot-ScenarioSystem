@@ -18,6 +18,7 @@ public class ManageController {
     @Autowired
     private ManageRepo manageRepo;
 
+    //获取所有管理员列表
     @NeedLogin
     @GetMapping(value = "/get_manage",produces = "application/json;charset=utf-8")
     public List<Manage> getManage(){

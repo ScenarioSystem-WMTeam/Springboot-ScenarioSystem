@@ -20,4 +20,7 @@ public interface UserRepo extends JpaRepository<User,Integer> {
     @Query(value = "select count(*) as user_count from user",nativeQuery = true)
     public Map<String,Object> getUserCount();
 
+    @Query(value = "select * from user where user_name like %?1% ",nativeQuery = true)
+    public List<User> findUserByName(String userName);
+
 }

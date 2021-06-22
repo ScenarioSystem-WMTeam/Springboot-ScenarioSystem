@@ -66,6 +66,7 @@ public class UserController {
         return result;
     }
 
+    //获取所有用户
     @NeedLogin
     @GetMapping(value = "/get_user",produces = "application/json;charset=utf-8")
     public List<User> getProducts(){

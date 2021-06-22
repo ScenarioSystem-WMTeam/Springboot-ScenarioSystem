@@ -16,7 +16,7 @@ public class OrderController {
     @Autowired
     private OrderRepo orderRepo;
 
-    //预订剧本
+    //预订剧本（未使用）
     @PostMapping(value = "/post_order")
     public Map<String,Object> createOrder(@RequestParam(value = "userNumber")String userNumber,
                                          @RequestParam(value = "playNumber")String playNumber){
