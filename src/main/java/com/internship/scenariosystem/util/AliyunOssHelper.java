@@ -1,4 +1,4 @@
-package com.example.Testweshop.util;
+package com.internship.scenariosystem.util;
 
 import com.aliyun.oss.OSS;
 import com.aliyun.oss.OSSClientBuilder;
